@@ -235,7 +235,7 @@ brlInput.addEventListener("keyup", () => {
 /*Isso é um
 Bloco de código */
 
-let dolar = 6.07;  
+let dolar = 6.05;  
 let usdInput = document.querySelector("#usd");  
 let brlInput = document.querySelector("#brl"); 
 usdInput.value = "0,00"
@@ -280,7 +280,7 @@ function formatCurrency(value){
 function fixValue(value){
     let result = value.replace(",", ".") 
     let floatResult = parseFloat(result);
-    if (floatResult == NaN){
+    if (isNaN(floatResult)){
         floatResult = 0;
     }
 
